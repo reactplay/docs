@@ -17,7 +17,7 @@ npm run start
 ```
 4. Visit http://localhost:3000/ in your browser to view the website.
 5. Make changes to the code and see the changes reflected in the browser.
-6. When you are done, stop the development server by pressing Ctrl+C in the terminal.
+6. Stop the development server by pressing Ctrl+C in the terminal.
 7. To build the website, run the following command in the root directory of the project:
 ```bash
 npm run build
