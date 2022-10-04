@@ -5,6 +5,9 @@ Source Code of the ReactPlay Documentation Website
 To get started, you need to have Node.js installed on your machine. You 
 can download it from [here](https://nodejs.org/en/download/).
 1. Clone the repository.
+```bash
+git clone https://github.com/reactplay/docs
+```
 2. Install the dependencies by running the following command in the root 
 directory of the project:
 ```bash
