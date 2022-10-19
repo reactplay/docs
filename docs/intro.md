@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# ReactPlay
+# Introducing ReactPlay
 
 ![banner](./img/banner.png)
 
