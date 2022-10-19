@@ -4,29 +4,30 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const TITLE = 'ReactPlayIO';
+const TAGLINE =
+  'An OpenSource platform for React developers to learn, create and share ReactJS Projects.';
+const ORG_NAME = 'reactplay';
+const REPO_NAME = 'docs';
+const WEB_URL = 'https://docs.reactplay.io/';
+const BLOG_URL = 'https://blog.reactplay.io/';
+const GITHUB_URL = 'https://github.com/reactplay/react-play';
+const DISCORD_URL = 'https://discord.gg/vrTxWUP8Am';
+const TWITTER_URL = 'https://twitter.com/reactplayio';
+const COPYRIGHT = `Copyright © ${new Date().getFullYear()} ${TITLE}. Built with Docusaurus.`;
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ReactPlayIO',
-  tagline:
-    'An Opensource platform for React developers to learn, create and share ReactJS Projects.',
-  url: 'https://reactplay.io/',
+  title: TITLE,
+  tagline: TAGLINE,
+  url: WEB_URL,
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'reactplay', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+  organizationName: ORG_NAME, // Usually your GitHub org/user name.
+  projectName: REPO_NAME, // Usually your repo name.
 
   presets: [
     [
@@ -35,18 +36,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -58,25 +49,25 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'ReactPlayIO',
+        title: TITLE,
         logo: {
-          alt: 'ReactPlayIO Logo',
-          src: 'img/logo.svg',
+          alt: `${TITLE} Logo`,
+          src: 'img/logo.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Guides',
           },
           {
-            href: 'https://blog.reactplay.io/',
+            href: BLOG_URL,
             label: 'Blog',
             position: 'left',
           },
           {
-            href: 'https://github.com/reactplay/react-play',
+            href: GITHUB_URL,
             label: 'GitHub',
             position: 'right',
           },
@@ -89,7 +80,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Guides',
                 to: '/docs/intro',
               },
             ],
@@ -99,11 +90,11 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.gg/vrTxWUP8Am',
+                href: DISCORD_URL,
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/reactplayio',
+                href: TWITTER_URL,
               },
             ],
           },
@@ -112,16 +103,16 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                href: 'https://blog.reactplay.io/',
+                href: BLOG_URL,
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/reactplay/react-play',
+                href: GITHUB_URL,
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ReactPlayIO, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ${TITLE}. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

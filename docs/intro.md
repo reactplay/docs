@@ -2,46 +2,16 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introducing ReactPlay
 
-Let's discover **Docusaurus in less than 5 minutes**.
+![banner](./img/banner.png)
 
-## Getting Started
+ReactPlay is an Opensource platform to learn, create and share ReactJS projects with the developer community. You can start by browsing through many ReactJS based projects like beginners, intermediate, and advanced. It allows you to learn from the code, explanation, articles, and videos related to a project and inspire you to create one.
 
-Get started by **creating a new site**.
+We call each project a play in ReactPlay. When you create a play with a few simple guided steps, it goes through some serious code reviews by experienced ReactJS developers. In the code review process, you learn several aspects of doing it right with React, "Thinking in React". After a successful code review, your play gets accepted and be part of ReactPlay to inspire many others in the community. So it is a chain to learn, create, and share all about React.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## 🔥 Demo
 
-### What you'll need
+Here is the link to the app. We hope you enjoy it.
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+[The ReactPlay app Link](https://reactplay.io)
