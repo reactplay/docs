@@ -2,6 +2,6 @@
 sidebar_position: 3
 ---
 
-# ReactPlay Schema
+# Troubleshooting Guide
 
-This page will discuss - Schema documentation
+Facing a problem? Check out our Troubleshooting Guide.

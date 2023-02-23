@@ -2,6 +2,6 @@
 sidebar_position: 2
 ---
 
-# Backend Schema
+# Database Schema
 
-This page will discuss - About the reactplay backend schema (like how to see the schema)
+This page will discuss - About the reactplay database schema

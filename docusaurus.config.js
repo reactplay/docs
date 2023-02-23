@@ -4,11 +4,12 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const TITLE = 'ReactPlayIO';
+const TITLE = 'Home';
 const TAGLINE =
   'An OpenSource platform for React developers to learn, create and share ReactJS Projects.';
 const ORG_NAME = 'reactplay';
 const REPO_NAME = 'docs';
+const MAIN_SITE_URL = 'https://reactplay.io/';
 const WEB_URL = 'https://docs.reactplay.io/';
 const BLOG_URL = 'https://blog.reactplay.io/';
 const GITHUB_URL = 'https://github.com/reactplay/react-play';
@@ -31,17 +32,18 @@ const config = {
 
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      '@docusaurus/preset-classic',
+      
+      {
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 

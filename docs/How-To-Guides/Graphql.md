@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# Graphql Guide
+# Interacting with ReactPlay data
 
-This page will discuss - How to interact with the play store with Graphql in react-play code.
+This page will discuss - How to interact with the ReatcPlay data using Graphql.
