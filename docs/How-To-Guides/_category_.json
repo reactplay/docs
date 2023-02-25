@@ -1,6 +1,6 @@
 {
   "label": "How To Guides",
-  "position": 4,
+  "position": 5,
   "link": {
     "type": "generated-index",
     "description": "These guides will teach you how to do things in ReactPlay."
