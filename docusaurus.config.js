@@ -33,7 +33,7 @@ const config = {
   presets: [
     [
       '@docusaurus/preset-classic',
-      
+
       {
         docs: {
           routeBasePath: '/',
@@ -114,7 +114,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ${TITLE}. Built with Docusaurus.`,
+        copyright: COPYRIGHT,
       },
       prism: {
         theme: lightCodeTheme,

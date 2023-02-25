@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
-# Create a Play
+# How to create a play?
 
 This document helps you with the steps to `Create a play` in `react-play`. You will also find the details of how to submit a play for code review.
 
