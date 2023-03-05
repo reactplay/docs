@@ -2,13 +2,14 @@
 Official documentation for ReactPlay 
 
 ## What is ReactPlay
+![ReactPlay](https://raw.githubusercontent.com/reactplay/react-play/main/src/images/og-image.png)
 `react-play` is an open-source web app that helps you learn ReactJS faster with a hands-on practice model. It is a collection of ReactJS projects you can use to learn ReactJS.
 
 Is that all? Nope. You can also create your projects and share them with the world. The best part is that the ReactJS experts will review your project code before it gets part of the ReactPlay app. Isn't that a pure WIN-WIN?
 
 This repository serves a documentation for ReactPlay. It includes information on how to perform various activities on the platform.
 
-## How to contribute to this repo?
+## 🤩 How to contribute to this repo?
 
 You can contribute to this repo in several ways:
 1. Write documentation for the various parts of ReactPLay
@@ -16,6 +17,10 @@ You can contribute to this repo in several ways:
 3. Improve the documentation website
 
 To contribute, you must set up this repository on your local machine. Here is a brief guide on setting up the repo on your local machine:
+
+> Please read CONTRIBUTING for details on our CODE OF CONDUCT, and the process for submitting pull requests to us.
+
+**💡 New to Open Source? Follow [this guide](https://opensource.guide/how-to-contribute/) to jumpstart your Open Source journey 🚀**
 
 ### 🍴 Fork and Clone the Repo
 First, you need to fork this repo. You can do this by clicking the `Fork` button on the top right corner of the repo. If you are new to forking, please watch this [YouTube Guide](https://www.youtube.com/watch?v=h8suY-Osn8Q) to get started.
@@ -96,7 +101,7 @@ The `branch-name` is the branch name you created before working on this issue.
 You can create multiple commits before pushing the code.
 
 
-### Pull Request
+### 🙌 Pull Request
 When you have resolved the issue, its time to make a pull request.
 Open the forked repo from GitHub web and go to `Pull Requests` tab. Then click the bright green `New Pull Request` button.
 
