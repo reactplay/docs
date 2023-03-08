@@ -12,7 +12,7 @@ This repository serves a documentation for ReactPlay. It includes information on
 ## 🤩 How to contribute to this repo?
 
 You can contribute to this repo in several ways:
-1. Write documentation for the various parts of ReactPLay
+1. Write documentation for the various parts of ReactPlay
 2. Suggest changes to the existing docs
 3. Improve the documentation website
 
