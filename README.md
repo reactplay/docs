@@ -1,6 +1,7 @@
 # docsite
 Source Code of the ReactPlay Documentation Website
-
+# Link to the original repo of ReactPlay: 
+- https://github.com/reactplay/react-play
 # Getting Started
 To get started, you need to have Node.js installed on your machine. You 
 can download it from [here](https://nodejs.org/en/download/).
