@@ -18,7 +18,7 @@ You can contribute to this repo in several ways:
 
 To contribute, you must set up this repository on your local machine. Here is a brief guide on setting up the repo on your local machine:
 
-> Please read CONTRIBUTING for details on our CODE OF CONDUCT, and the process for submitting pull requests to us.
+> Please read [CONTRIBUTING](https://github.com/reactplay/docs/blob/main/CONTRIBUTING.md) for details on our [CODE OF CONDUCT](https://github.com/reactplay/docs/blob/main/CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
 **💡 New to Open Source? Follow [this guide](https://opensource.guide/how-to-contribute/) to jumpstart your Open Source journey 🚀**
 
