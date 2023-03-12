@@ -69,6 +69,11 @@ const config = {
             position: 'left',
           },
           {
+            href: MAIN_SITE_URL,
+            label: 'ReactPlay',
+            position: 'left',
+          },
+          {
             href: GITHUB_URL,
             label: 'GitHub',
             position: 'right',
