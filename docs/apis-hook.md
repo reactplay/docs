@@ -58,7 +58,7 @@ return (
 
 ## useFeaturedPlays
 
-Invoking `useFeaturedPlays` hook would internally run a GraphQL query to retrieve the list of featured plays. This function returns an array of 3 items. A `loading` state used to represent a loader while the data is being fetched. The `error` object contains details about any error that occurred while trying to fetch the data. The `data` object contains the list of featured plays as an array.
+Invoking `useFeaturedPlays` hook would internally run a GraphQL query to retrieve the list of featured plays. This function returns an array of 3 items. A `loading` state is used to represent a loader while the data is being fetched. The `error` object contains details about any error that occurred while trying to fetch the data. The `data` object contains the list of featured plays as an array.
 
 ```JavaScript
 const [loading, error, data] = useFeaturedPlays();
@@ -91,7 +91,7 @@ return (
 
 ## useGetPlays
 
-Invoking `useGetPlays` hook would internally run a GraphQL query to retrieve the list of all the plays. This custom hook considers any filters that are applied through `Filter Play` options as well as any value provided in the search bar. `useGetPlays` returns an array of 3 items. A `loading` state used to represent a loader while the data is being fetched. The `error` object contains details about any error that occurred while trying to fetch the data. The `data` object contains the list of featured plays as an array.
+Invoking `useGetPlays` hook would internally run a GraphQL query to retrieve the list of all the plays. This custom hook considers any filters that are applied through `Filter Play` options as well as any value provided in the search bar. `useGetPlays` returns an array of 3 items. A `loading` state is used to represent a loader while the data is being fetched. The `error` object contains details about any error that occurred while trying to fetch the data. The `data` object contains the list of featured plays as an array.
 
 ```JavaScript
 const [loading, error, plays] = useGetPlays();
@@ -129,7 +129,7 @@ return (
 
 ## useLikePlays
 
-This custom hook creates an abstraction around the `likePlay` and `unlikePlay` functions. Both these functions take the playObject as a paramter and performs the respective activity of like or unlike. `useLikePlays` returns an object with properties `{ likePlay, unlikePlay }`
+This custom hook creates an abstraction around the `likePlay` and `unlikePlay` functions. Both these functions take the playObject as a parameter and perform the respective activity of like or unlike. `useLikePlays` returns an object with properties `{ likePlay, unlikePlay }`
 
 ```JavaScript
 const { likePlay, unLikePlay } = useLikePlays();
@@ -140,3 +140,13 @@ await unLikePlay({ ...mutationObj, liked: !likeObj.liked });
 ```
 
 ## useLocalStorage
+
+This hook acts as an abstraction function for getting and setting [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) values. `useLocalStorage` takes `key` and `initialValue` as parameters and returns an array of `[storedValue, setValue]`
+
+```JavaScript
+ const [localStoreExpenses, setLocalStoreExpenses] = useLocalStorage('et-expenses', []);
+// accessing the stored value
+const expense = localStoreExpenses[localStoreExpenses.length - 1];
+// storing new values against the same key `et-expenses`
+setLocalStoreExpenses([...localStoreExpenses, data]);
+```
