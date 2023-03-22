@@ -12,7 +12,7 @@ const REPO_NAME = 'docs';
 const MAIN_SITE_URL = 'https://reactplay.io/';
 const WEB_URL = 'https://docs.reactplay.io/';
 const BLOG_URL = 'https://blog.reactplay.io/';
-const GITHUB_URL = 'https://github.com/reactplay/react-play';
+const GITHUB_URL = 'https://github.com/reactplay/docs/';
 const DISCORD_URL = 'https://discord.gg/vrTxWUP8Am';
 const TWITTER_URL = 'https://twitter.com/reactplayio';
 const COPYRIGHT = `Copyright © ${new Date().getFullYear()} ${TITLE}. Built with Docusaurus.`;
@@ -88,7 +88,7 @@ const config = {
             items: [
               {
                 label: 'Guides',
-                to: '/docs/intro',
+                to: '/',
               },
             ],
           },

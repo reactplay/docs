@@ -1,5 +1,7 @@
 # ReactPlay Docs
-Official documentation for ReactPlay 
+Official documentation for ReactPlay.
+ 
+ Check ReactPlay [Official Repository](https://github.com/reactplay/react-play) for more information.
 
 ## What is ReactPlay
 ![ReactPlay](https://raw.githubusercontent.com/reactplay/react-play/main/src/images/og-image.png)
@@ -92,7 +94,7 @@ You can save your changes by committing them. Committing once you have made sign
 
 ```bash
 git add .
-git commit -m "<massage>"
+git commit -m "<message>"
 git push -u origin <branch-name>
 ```
 The `message` should be a descriptive text defining your changes since the last commit.
