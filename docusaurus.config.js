@@ -15,6 +15,7 @@ const BLOG_URL = 'https://blog.reactplay.io/';
 const GITHUB_URL = 'https://github.com/reactplay/docs/';
 const DISCORD_URL = 'https://discord.gg/vrTxWUP8Am';
 const TWITTER_URL = 'https://twitter.com/reactplayio';
+const LINKEDIN_URL = 'https://www.linkedin.com/company/reactplay/';
 const COPYRIGHT = `Copyright © ${new Date().getFullYear()} ${TITLE}. Built with Docusaurus.`;
 
 /** @type {import('@docusaurus/types').Config} */
@@ -102,6 +103,10 @@ const config = {
               {
                 label: 'Twitter',
                 href: TWITTER_URL,
+              },
+              {
+                label: 'LinkedIn',
+                href: LINKEDIN_URL,
               },
             ],
           },
