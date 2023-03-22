@@ -21,7 +21,7 @@ In this section, we will discuss each of them in detail.
 
 As the name suggests, this hook can be used to create a temporary cache of any kind of data in our codebase (not on the browser).
 
-```js
+```jsx
 const [getCacheResponse, setCacheResponse] = useCacheResponse();
 const response = axios(API_URL);
 setCacheResponse(FILTER_DATA_RESPONSE, response);
@@ -35,7 +35,7 @@ const isCachedResponse = getCacheResponse(FILTER_DATA_RESPONSE);
 
 This custom hook helps in retrieving the names of the contributors in [ReactPlay](https://github.com/reactplay/react-play) repository on GitHub. `useContributors` takes one parameter `sorted` which is a boolean value. If `true` is passed, the result is a sorted list of contributors based on the number of contributions (highest to lowest). This function returns an object with `{ data, error, isLoading }`.
 
-```js
+```jsx
 const { data, error, isLoading } = useContributors(true);
 
 return (
@@ -60,7 +60,7 @@ return (
 
 Invoking `useFeaturedPlays` hook would internally run a GraphQL query to retrieve the list of featured plays. This function returns an array of 3 items. A `loading` state is used to represent a loader while the data is being fetched. The `error` object contains details about any error that occurred while trying to fetch the data. The `data` object contains the list of featured plays as an array.
 
-```js
+```jsx
 const [loading, error, data] = useFeaturedPlays();
 const success = !loading && !error && data.length;
 
@@ -78,7 +78,7 @@ return (
 
 `useFetch` is a custom hook that creates a wrapper around the [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) call. Although we use GraphQL to fetch data on react play, this hook would be useful while making REST API calls that are required while creating custom plays. `useFetch` accepts 2 parameters, `url` and `options` and returns an object with `{ data, error, isLoading }`.
 
-```js
+```jsx
 const { data, loading, error } = useFetch(API_BASE_URL);
 
 return (
@@ -94,7 +94,7 @@ return (
 
 Invoking `useGetPlays` hook would internally run a GraphQL query to retrieve the list of all the plays. This custom hook considers any filters that are applied through `Filter Play` options as well as any value provided in the search bar. `useGetPlays` returns an array of 3 items. A `loading` state is used to represent a loader while the data is being fetched. The `error` object contains details about any error that occurred while trying to fetch the data. The `data` object contains the list of featured plays as an array.
 
-```js
+```jsx
 const [loading, error, plays] = useGetPlays();
 
 if (loading) {
@@ -118,7 +118,7 @@ if (plays?.length === 0 || error) {
 
 `useGitHub` fetches the GitHub API to obtain information about a given user. This hook takes one parameter which is the GitHub username and returns an object with `{ data, error, isLoading }`
 
-```js
+```jsx
 const { data, error, isLoading } = useGitHub(`username`);
 
 return (
@@ -134,7 +134,7 @@ return (
 
 This custom hook creates an abstraction around the `likePlay` and `unlikePlay` functions. Both these functions take the playObject as a parameter and perform the respective activity of like or unlike. `useLikePlays` returns an object with properties `{ likePlay, unlikePlay }`
 
-```js
+```jsx
 const { likePlay, unLikePlay } = useLikePlays();
 // ... code processing
 await likePlay({ play_id: play.id, user_id: userId });
@@ -146,7 +146,7 @@ await unLikePlay({ ...mutationObj, liked: !likeObj.liked });
 
 This hook acts as an abstraction function for getting and setting [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) values. `useLocalStorage` takes `key` and `initialValue` as parameters and returns an array of `[storedValue, setValue]`
 
-```js
+```jsx
 const [localStoreExpenses, setLocalStoreExpenses] = useLocalStorage(
   "et-expenses",
   []
