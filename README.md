@@ -1,6 +1,7 @@
 # ReactPlay Docs
-Official documentation for ReactPlay 
-Check ReactPlay ![Official Repository](https://github.com/reactplay/react-play) for more information.
+Official documentation for ReactPlay.
+ 
+ Check ReactPlay [Official Repository](https://github.com/reactplay/react-play) for more information.
 
 ## What is ReactPlay
 ![ReactPlay](https://raw.githubusercontent.com/reactplay/react-play/main/src/images/og-image.png)
