@@ -104,10 +104,6 @@ const config = {
                 label: 'Twitter',
                 href: TWITTER_URL,
               },
-              {
-                label: 'LinkedIn',
-                href: LINKEDIN_URL,
-              },
             ],
           },
           {
