@@ -93,7 +93,7 @@ You can save your changes by committing them. Committing once you have made sign
 
 ```bash
 git add .
-git commit -m "<massage>"
+git commit -m "<message>"
 git push -u origin <branch-name>
 ```
 The `message` should be a descriptive text defining your changes since the last commit.
