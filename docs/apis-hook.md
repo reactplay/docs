@@ -19,7 +19,20 @@ In this section, we will discuss each of them in detail.
 
 ## useCacheResponse
 
-As the name suggests, this hook can be used to create a temporary cache of any kind of data in our codebase (not on the browser).
+**Description**
+
+As the name suggests, this hook can be used to create a temporary cache for any kind of data in our codebase (not on the browser).
+
+**Input Parameters:**
+
+- None
+
+**Returned Value** - Array
+
+- Getter function to fetch the `cached value` based on the `key`
+- Setter function to create/update the `value` against the `key`
+
+**Example**
 
 ```jsx
 const [getCacheResponse, setCacheResponse] = useCacheResponse();
@@ -29,11 +42,26 @@ setCacheResponse(FILTER_DATA_RESPONSE, response);
 const isCachedResponse = getCacheResponse(FILTER_DATA_RESPONSE);
 ```
 
-`useCachedResponse()` returns a getter and a setter function. In the above example, we are setting the `FILTER_DATA_RESPONSE` value based on the API response. This value is now stored as a cached response. We can then use the getter function to access this cached value by passing the same key of `FILTER_DATA_RESPONSE`
+In the above example, we are setting the `FILTER_DATA_RESPONSE` value based on the API response. This value is now stored as a cached response. We can then use `getCacheResponse` to access this cached value by passing the same key of `FILTER_DATA_RESPONSE`
 
 ## useContributors
 
-This custom hook helps in retrieving the names of the contributors in [ReactPlay](https://github.com/reactplay/react-play) repository on GitHub. `useContributors` takes one parameter `sorted` which is a boolean value. If `true` is passed, the result is a sorted list of contributors based on the number of contributions (highest to lowest). This function returns an object with `{ data, error, isLoading }`.
+**Description**
+
+This custom hook helps in retrieving the information about [ReactPlay's](https://github.com/reactplay/react-play) contributors.
+
+**Input Parameters:**
+
+- `sorted`: a boolean value
+  If `true` is passed, the result would be a sorted list of contributors based on the number of contributions (highest to lowest).
+
+**Returned Value** - Object
+
+- An `isLoading` state represents a loader while the data is fetched.
+- The `error` object contains details about any error that occurred while trying to fetch the data.
+- The `data` object contains the list of contributors' information
+
+**Example**
 
 ```jsx
 const { data, error, isLoading } = useContributors(true);
@@ -58,7 +86,21 @@ return (
 
 ## useFeaturedPlays
 
-Invoking `useFeaturedPlays` hook would internally run a GraphQL query to retrieve the list of featured plays. This function returns an array of 3 items. A `loading` state is used to represent a loader while the data is being fetched. The `error` object contains details about any error that occurred while trying to fetch the data. The `data` object contains the list of featured plays as an array.
+**Description**
+
+Invoking `useFeaturedPlays` hook would internally run a GraphQL query to retrieve the list of featured plays.
+
+**Input Parameters:**
+
+- None
+
+**Returned Value** - Array
+
+- A `loading` state that represents a loader while the data is fetched.
+- The `error` object contains details about any error that occurred while trying to fetch the data.
+- The `data` object contains the list of featured plays as an array.
+
+**Example**
 
 ```jsx
 const [loading, error, data] = useFeaturedPlays();
@@ -76,7 +118,22 @@ return (
 
 ## useFetch
 
-`useFetch` is a custom hook that creates a wrapper around the [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) call. Although we use GraphQL to fetch data on react play, this hook would be useful while making REST API calls that are required while creating custom plays. `useFetch` accepts 2 parameters, `url` and `options` and returns an object with `{ data, error, isLoading }`.
+**Description**
+
+`useFetch` is a custom hook that creates a wrapper around the [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) call. Although we use GraphQL to fetch data on react play, this hook would be useful while making REST API calls that are required while creating custom plays.
+
+**Input Parameters:**
+
+- `url`: Endpoint URL of the API
+- `options`: An object to provide API options
+
+**Returned Value** - Object
+
+- A `loading` state that represents a loader while the data is fetched.
+- The `error` object contains details about any error that occurred while trying to fetch the data.
+- The `data` object contains the response from the API
+
+**Example**
 
 ```jsx
 const { data, loading, error } = useFetch(API_BASE_URL);
@@ -92,7 +149,21 @@ return (
 
 ## useGetPlays
 
-Invoking `useGetPlays` hook would internally run a GraphQL query to retrieve the list of all the plays. This custom hook considers any filters that are applied through `Filter Play` options as well as any value provided in the search bar. `useGetPlays` returns an array of 3 items. A `loading` state is used to represent a loader while the data is being fetched. The `error` object contains details about any error that occurred while trying to fetch the data. The `data` object contains the list of featured plays as an array.
+**Description**
+
+Invoking `useGetPlays` hook would internally run a GraphQL query to retrieve the list of all the plays. This custom hook considers any filters that are applied through `Filter Play` options as well as any value provided in the search bar.
+
+**Input Parameters:**
+
+- None
+
+**Returned Value** - Array
+
+- A `loading` state that represents a loader while the data is fetched.
+- The `error` object contains details about any error that occurred while trying to fetch the data.
+- The `plays` object contains the list of plays as an array.
+
+**Example**
 
 ```jsx
 const [loading, error, plays] = useGetPlays();
@@ -116,7 +187,21 @@ if (plays?.length === 0 || error) {
 
 ## useGitHub
 
-`useGitHub` fetches the GitHub API to obtain information about a given user. This hook takes one parameter which is the GitHub username and returns an object with `{ data, error, isLoading }`
+**Description**
+
+`useGitHub` fetches the GitHub API to obtain information about a given user.
+
+**Input Parameters:**
+
+- `username`: GitHub username
+
+**Returned Value** - object
+
+- An `isLoading` state represents a loader while the data is fetched.
+- The `error` object contains details about any error that occurred while trying to fetch the data.
+- The `data` object contains the user's GitHub information.
+
+**Example**
 
 ```jsx
 const { data, error, isLoading } = useGitHub(`username`);
@@ -132,7 +217,20 @@ return (
 
 ## useLikePlays
 
-This custom hook creates an abstraction around the `likePlay` and `unlikePlay` functions. Both these functions take the playObject as a parameter and perform the respective activity of like or unlike. `useLikePlays` returns an object with properties `{ likePlay, unlikePlay }`
+**Description**
+
+This custom hook creates an abstraction around the `likePlay` and `unlikePlay` functions.
+
+**Input Parameters:**
+
+- None
+
+**Returned Value** - Object
+
+- `likePlay` function which takes a `playObject` that has been `liked`
+- `unlikePlay` function which takes a `playObject` that has been `unliked`
+
+**Example**
 
 ```jsx
 const { likePlay, unLikePlay } = useLikePlays();
@@ -144,7 +242,21 @@ await unLikePlay({ ...mutationObj, liked: !likeObj.liked });
 
 ## useLocalStorage
 
-This hook acts as an abstraction function for getting and setting [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) values. `useLocalStorage` takes `key` and `initialValue` as parameters and returns an array of `[storedValue, setValue]`
+**Description**
+
+This hook acts as an abstraction function for getting and setting [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) values.
+
+**Input Parameters:**
+
+- `key`
+- `initialValue`
+
+**Returned Value** - Array
+
+- `storedValue` against the provided `key`
+- `setValue` is a function to update the `storedValue` data on localStorage
+
+**Example**
 
 ```jsx
 const [localStoreExpenses, setLocalStoreExpenses] = useLocalStorage(
