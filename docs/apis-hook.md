@@ -19,8 +19,6 @@ In this section, we will discuss each of them in detail.
 
 ## useCacheResponse
 
-**Description**
-
 As the name suggests, this hook can be used to create a temporary cache for any kind of data in our codebase (not on the browser).
 
 **Input Parameters:**
@@ -45,8 +43,6 @@ const isCachedResponse = getCacheResponse(FILTER_DATA_RESPONSE);
 In the above example, we are setting the `FILTER_DATA_RESPONSE` value based on the API response. This value is now stored as a cached response. We can then use `getCacheResponse` to access this cached value by passing the same key of `FILTER_DATA_RESPONSE`
 
 ## useContributors
-
-**Description**
 
 This custom hook helps in retrieving the information about [ReactPlay's](https://github.com/reactplay/react-play) contributors.
 
@@ -86,8 +82,6 @@ return (
 
 ## useFeaturedPlays
 
-**Description**
-
 Invoking `useFeaturedPlays` hook would internally run a GraphQL query to retrieve the list of featured plays.
 
 **Input Parameters:**
@@ -118,8 +112,6 @@ return (
 
 ## useFetch
 
-**Description**
-
 `useFetch` is a custom hook that creates a wrapper around the [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) call. Although we use GraphQL to fetch data on react play, this hook would be useful while making REST API calls that are required while creating custom plays.
 
 **Input Parameters:**
@@ -148,8 +140,6 @@ return (
 ```
 
 ## useGetPlays
-
-**Description**
 
 Invoking `useGetPlays` hook would internally run a GraphQL query to retrieve the list of all the plays. This custom hook considers any filters that are applied through `Filter Play` options as well as any value provided in the search bar.
 
@@ -187,8 +177,6 @@ if (plays?.length === 0 || error) {
 
 ## useGitHub
 
-**Description**
-
 `useGitHub` fetches the GitHub API to obtain information about a given user.
 
 **Input Parameters:**
@@ -217,8 +205,6 @@ return (
 
 ## useLikePlays
 
-**Description**
-
 This custom hook creates an abstraction around the `likePlay` and `unlikePlay` functions.
 
 **Input Parameters:**
@@ -241,8 +227,6 @@ await unLikePlay({ ...mutationObj, liked: !likeObj.liked });
 ```
 
 ## useLocalStorage
-
-**Description**
 
 This hook acts as an abstraction function for getting and setting [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) values.
 
