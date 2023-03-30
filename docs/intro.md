@@ -3,7 +3,7 @@ slug: /
 sidebar_position: 1
 ---
 
-# ReactPlay?
+# What is ReactPlay?
 
 ![banner](./img/banner.png)
 
