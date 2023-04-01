@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+# How to Create a Play
+
 Welcome developers! We are as excited as you are to know that you are going to create a new play. It is super easy to get started.
 
 > **Note:** The steps below assumes that you have forked and cloned the [react-play](https://github.com/reactplay/react-play) repository. Also, you have installed the dependencies using the `npm install` or `yarn install` command. If you are new to forking, please watch this [YouTube Guide](https://www.youtube.com/watch?v=h8suY-Osn8Q) to get started.
@@ -115,4 +117,4 @@ Once the Pull Request is approved and merged, we will notify you and add you as 
 
 ## ✋ Need Help?
 
-You can reach out to us at [ReactPlay Twitter Handle | @ReactPlayIO](https://twitter.com/ReactPlayIO) with a DM. Additionally, feel free to open a [discussion](https://github.com/reactplay/react-play/discussions) or [issue](https://github.com/reactplay/react-play/issues) on the `react-play` repository.
+You can reach out to us at [ReactPlay Twitter Handle | @ReactPlayIO](https://twitter.com/ReactPlayIO) with a DM. Additionally, feel free to join our [Discord community](https://discord.gg/vrTxWUP8Am) for discussions.
