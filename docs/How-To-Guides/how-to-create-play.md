@@ -10,7 +10,9 @@ Welcome developers! We are as excited as you are to know that you are going to c
 
   ```bash
   yarn start
-  #OR
+
+  or
+
   npm run start
   ```
 
@@ -71,16 +73,20 @@ Parameter details
   `bash
 npx create-react-play@latest -c <the_play_id>
 `
-    <p align="center">
-    <img src="https://res.cloudinary.com/atapas/image/upload/v1675172352/ReactPlay/Screenshot_2023-01-31_at_7.06.07_PM_jhbcbl.png" alt="copy-command" />
-    </p>
+  <p align="center">
+  <img src="https://res.cloudinary.com/atapas/image/upload/v1675172352/ReactPlay/Screenshot_2023-01-31_at_7.06.07_PM_jhbcbl.png" alt="copy-command" />
+  </p>
 
 - Start the application
+
   ```bash
   yarn start
-  #OR
+
+  or
+
   npm run start
   ```
+
 - You should now see your play added to the [play list](http://localhost:3000/plays) page.
 <p align="center">
   <img src="https://res.cloudinary.com/atapas/image/upload/v1675172352/ReactPlay/Screenshot_2023-01-31_at_7.06.55_PM_gyck2r.png" alt="play" />
