@@ -29,22 +29,11 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.fork {
-  display: inline-flex;
-  align-items: center;
-  padding: 0 4px;
-  border: 0.5px solid rgb(156 163 175);
-  border-radius: 3px;
-}
-
-.code {
-  display: inline-flex;
-  align-items: center;
-  padding: 0 4px;
-  border: 0.5px solid rgb(156 163 175);
-  border-radius: 3px;
-}
-
-.svg {
-  margin-right: 2px;
+.first-issue {
+  background-color: #c1b8ff;
+  color: rgb(107 33 168);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
 }
