@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Contribute to Docs
+# Contribution Guide
 
 [ReactPlay Docs](https://docs.reactplay.io/) is our official documentation for ReactPlay. As the name suggests, it includes documentation of various aspects and features of ReactPlay.
 
@@ -32,8 +32,11 @@ We also love `typo` issues. If you find a typo somewhere, get in touch us and cr
 - If you are a regular user and think some feature might be beneficial you can [request a feature](https://github.com/reactplay/react-play/issues/new?assignees=&labels=&template=feature-request.yml&title=%E2%9C%A8+%5BFeature+request%5D%3A+).
 - Found a bug. Great! Go ahead and open a [bug report](https://github.com/reactplay/react-play/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%F0%9F%90%9B+%5BBug+report%5D%3A+)
 - You could also improve the [docs](https://github.com/reactplay/docs) which would help us immensely.
+- You could give us feedback, suggestions and help us improve our UX.
   <!-- TODO: social media handles-->
-  It doesn't end here. You could give us feedback, suggestions and help us improve our UX. You could write articles on our [blog](https://blog.reactplay.io/). You could also be our advocate and help us in arranging events, sponsors and support.
+- Have interest in interacting with public, you are welcome to manage our social media handles
+- Have a flair for writing, you could publish articles on our [blog](https://blog.reactplay.io/).
+- You could also be our advocate and help us in arranging events, sponsors and support.
 
 You as a contributor could just about do anything mentioned above or any combination of the things above. We love our contributors and do our best to accommodate what you bring to the table.
 
@@ -43,4 +46,4 @@ If you are a beginner look for the <span className="first-issue">good first issu
 
 ## Recognition
 
-ReactPlay organizes various events where you could participate and win awards and recognition for your contribution in the ReactPlay organization.
+ReactPlay organizes [various events](https://hustles.reactplay.io/) where you could participate and win awards and recognition for your contribution in the ReactPlay organization.
