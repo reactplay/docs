@@ -37,3 +37,11 @@
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */
 }
+
+.ionicon {
+  /* margin-top: 14px; */
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 4px;
+}
