@@ -40,7 +40,7 @@ We also love `typo` issues. If you find a typo somewhere, get in touch us and cr
 You as a contributor could just about do anything mentioned above or any combination of the things above. We love our contributors and do our best to accommodate what you bring to the table.
 
 :::tip
-If you are a beginner look for the <span className="first-issue">good first issue</span> label in the issues page.
+If you are a beginner look for the <span className="good-first-issue-badge">good first issue</span> label in the issues page.
 :::
 
 ## Recognition
