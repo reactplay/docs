@@ -8,10 +8,6 @@ sidebar_position: 2
 
 If you've come so far, _you_ already consider yourself a part of _ReactPlay_. And guess what, we have accepted you too. We are family!! 🎉. Henceforth we grow together.
 
-:::note
-Before getting started, please read [CONTRIBUTING](https://github.com/reactplay/docs/blob/main/CONTRIBUTING.md) guide for details on our [CODE OF CONDUCT](https://github.com/reactplay/docs/blob/main/CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
-:::
-
 :::tip
 New to open-source? Follow [this guide](https://opensource.guide/how-to-contribute/) to jumpstart your Open Source journey 🚀
 :::
