@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +27,13 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.good-first-issue-badge {
+  background-color: #c1b8ff;
+  color: rgb(107 33 168);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
 }
