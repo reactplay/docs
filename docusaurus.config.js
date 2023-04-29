@@ -132,10 +132,17 @@ const config = {
       },
       colorMode: {
         defaultMode: 'light',
-  
+
         respectPrefersColorScheme: true,
-      }
+      },
     }),
+  scripts: [
+    {
+      src: 'https://analytics.reactplay.io/script.js',
+      async: true,
+      'data-website-id': 'b385383c-0fb2-437f-84a8-2a98daf05fde',
+    },
+  ],
 };
 
 module.exports = config;
