@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -36,4 +36,13 @@
   border-radius: 20px;
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */
+}
+.beta-badge::after {
+  content: 'Beta';
+  background-color: #c1b8ff;
+  color: #6b21a8;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-left: 8px;
 }
