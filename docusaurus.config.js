@@ -63,6 +63,7 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Guides',
+            className: 'beta-badge',
           },
           {
             href: BLOG_URL,
