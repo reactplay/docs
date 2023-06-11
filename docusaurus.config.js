@@ -20,6 +20,7 @@ const COPYRIGHT = `Copyright © ${new Date().getFullYear()} ${TITLE}. Built with
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+
   title: TITLE,
   tagline: TAGLINE,
   url: WEB_URL,
@@ -47,6 +48,21 @@ const config = {
       },
     ],
   ],
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'bn'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      },
+      // You can omit a locale (e.g. fr) if you don't need to override the defaults
+      bn: {
+        htmlLang: 'bn',
+        direction: 'ltr',
+      },
+    },
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -79,6 +95,10 @@ const config = {
             href: GITHUB_URL,
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'left',
           },
         ],
       },

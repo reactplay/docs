@@ -1,0 +1,42 @@
+{
+  "link.title.Docs": {
+    "message": "ডকুমেন্টেশন",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Community": {
+    "message": "কমিউনিটি",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "আরও",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Guides": {
+    "message": "গাইড",
+    "description": "The label of footer link with label=Guides linking to /"
+  },
+  "link.item.label.Discord": {
+    "message": "ডিসকর্ড",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/vrTxWUP8Am"
+  },
+  "link.item.label.Twitter": {
+    "message": "টুইটার",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/reactplayio"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "লিঙ্কডইন",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/reactplay/"
+  },
+  "link.item.label.Blog": {
+    "message": "ব্লগ",
+    "description": "The label of footer link with label=Blog linking to https://blog.reactplay.io/"
+  },
+  "link.item.label.GitHub": {
+    "message": "গিটহাব",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/reactplay/docs/"
+  },
+  "copyright": {
+    "message": "কপিরাইট © ২০২৩ হোম। ডোকুস্যারাস দিয়ে তৈরি করা।",
+    "description": "The footer copyright"
+  }
+}

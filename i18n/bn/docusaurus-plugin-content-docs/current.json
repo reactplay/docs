@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "পরবর্তী",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.How To Guides": {
+    "message": "কিভাবে গাইড করবেন",
+    "description": "The label for category How To Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.How To Guides.link.generated-index.description": {
+    "message": "এই গাইডগুলি আপনাকে শিখিয়ে দিবে কিভাবে ReactPlay ব্যবহার করতে হয়।",
+    "description": "The generated-index page description for category How To Guides in sidebar tutorialSidebar"
+  }
+}
