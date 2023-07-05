@@ -2,6 +2,6 @@
 sidebar_position: 7
 ---
 
-# Troubleshooting Guide
+# সমস্যা সমাধানের গাইড
 
-Facing a problem? Check out our Troubleshooting Guide.
+কোনো সমস্যার সম্মুখীন? আমাদের সমস্যা সমাধানের গাইড দেখুন।
