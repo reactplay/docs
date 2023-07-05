@@ -2,21 +2,21 @@
 sidebar_position: 2
 ---
 
-# Contribution Guide
+# কন্ট্রিবিউশন গাইড
 
-[ReactPlay Docs](https://docs.reactplay.io/) is our official documentation for ReactPlay. As the name suggests, it includes documentation of various aspects and features of ReactPlay.
+[ReactPlay Docs](https://docs.reactplay.io/) হলো আমাদের ReactPlay-এর অফিসিয়াল ডকুমেন্টেশন। এর নাম থেকেই বুঝা যায় এতে ReactPlay-এর বিভিন্ন দিক এবং বৈশিষ্ট্যের ডকুমেন্টেশন অন্তর্ভুক্ত রয়েছে।
 
-If you've come so far, _you_ already consider yourself a part of _ReactPlay_. And guess what, we have accepted you too. We are family!! 🎉. Henceforth we grow together.
+আপনি যদি এতদূর এসে থাকেন, তবে আপনি ইতিমধ্যে নিজেকে ReactPlay-এর একটি অংশ হিসেবে বিবেচনা করতে পারেন। এবং মনে করুন, আমরাও আপনাকে গ্রহণ করেছি। আমরা একটি পরিবার!! 🎉 আমরা একসাথে এগিয়ে যাব।
 
 :::tip
-New to open-source? Follow [this guide](https://opensource.guide/how-to-contribute/) to jumpstart your Open Source journey 🚀
+ওপেন সোর্সে নতুন? আপনার ওপেন সোর্স যাত্রা শুরু করতে এই [গাইডটি ](https://opensource.guide/how-to-contribute/) অনুসরণ করুন 🚀
 :::
 
-## Getting Started
+## শুরু করুন
 
-As a first step we recommend reading our contribution and code-of-conduct guides. The majority of our work resides in [react-play](https://github.com/reactplay/react-play) and [docs](https://github.com/reactplay/docs) repository. Kindly read the `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` files from the respective repositories to get acquainted with our requirements.
+প্রথম ধাপ হিসাবে আমরা আপনাকে আমাদের কন্ট্রিবিউশন এবং আচরণবিধির গাইডসমূহ পড়ার পরামর্শ দিই। আমাদের কাজের বেশিরভাগই [react-play](https://github.com/reactplay/react-play) এবং [docs](https://github.com/reactplay/docs) রিপোজিটরিতে থাকে। আমাদের প্রয়োজনীয়তা সম্পর্কে জানতে, অনুগ্রহ করে প্রদত্ত রিপোজিটরির `CONTRIBUTING.md` এবং `CODE_OF_CONDUCT.md` ফাইলগুলি পড়ুন।
 
-## Nature of Contribution
+## কন্ট্রিবিউশনের ধরণ
 
 We at ReactPlay are eagerly looking for contributions from both `code` and `no-code` domains. So, irrespective of your level of technical knowledge, you will have plenty of areas where you can contribute.
 
