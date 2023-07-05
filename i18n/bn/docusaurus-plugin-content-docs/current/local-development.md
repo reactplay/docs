@@ -2,29 +2,29 @@
 sidebar_position: 3
 ---
 
-# Local Development
+# লোকাল ডেভেলপমেন্ট
 
-You may want to set up the `react-play` repo for the following reasons:
+আপনি নিম্নলিখিত কারণে `react-play` রিপোটি সেটআপ করতে চানঃ
 
-- Please check the [Contribution Guide](https://github.com/reactplay/react-play/blob/main/CONTRIBUTING.md) to get started with contributing to the `react-play` repo in general.
+- `react-play` রিপোতে সাধারণভাবে কন্ট্রিবিউট শুরু করার জন্য অনুগ্রহ করে [কন্ট্রিবিউশন গাইডলাইন ](https://github.com/reactplay/react-play/blob/main/CONTRIBUTING.md) দেখুন।
 
-- You want to create a new play (A play is a React project) or want to edit an existing play as a contributor. Please check the [Create a Play Guide](./How-To-Guides/how-to-create-play.md) for more details.
+- আপনি নতুন একটি `Play` (যা হলো একটি রিয়েক্ট প্রজেক্ট) তৈরি করতে চান অথবা কন্ট্রিবিউটর হিসাবে একটি বিদ্যমান `Play` সংশোধন করতে চান। বিস্তারিত জানতে অনুগ্রহ করে [Play তৈরির গাইড](./How-To-Guides/how-to-create-play.md) দেখুন।
 
-Here is a quick overview of the `react-play` repo setup:
+এখানে `react-play` রিপোটির সেটআপের সংক্ষিপ্ত পর্যালোচনা দেওয়া হলোঃ
 
-## Fork and Clone the Repo
+## রিপোটি ফর্ক করুন এবং ক্লোন করুন।
 
-First, you need to fork the `react-play` repo. You can do this by clicking the `Fork` button on the top right corner of the repo. If you are new to forking, please watch this [YouTube Guide](https://www.youtube.com/watch?v=h8suY-Osn8Q) to get started.
+প্রথমে, আপনাকে `react-play` রিপোটি ফর্ক করতে হবে। আপনি এটা করতে পারেন রিপোটির উপরের ডান প্রান্তের `Fork` বাটনে ক্লিক করে। যদি আপনি ফর্কিং সম্পর্কে নতুন হন তবে অনুগ্রহ করে শুরু করতে এই [YouTube গাইড](https://www.youtube.com/watch?v=h8suY-Osn8Q) দেখুন।
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/h8suY-Osn8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Once forked, you can clone the repo by clicking the `Clone or Download` button on the top right corner of the forked repo.
+ফর্ক করার পরে, আপনি ফর্ককৃত রিপোটির উপরে ডান দিকের শীর্ষ কোণে অবস্থিত `Clone or Download` বাটনে ক্লিক করে রিপোটি ক্লোন করতে পারেন।
 
-Please change the directory after cloning the repository using the `cd <folder-name>` command.
+রিপোটি ক্লোন করার পরে অনুগ্রহ করে `cd <ফোল্ডার-নাম>` কমান্ড ব্যবহার করে ডিরেক্টরি পরিবর্তন করুন।
 
-## Install Dependencies
+## ডিপেন্ডেন্সিগুলো ইনস্টল করুন।
 
-Next, install the dependencies by running the following command in the `react-play` repo:
+পরবর্তীতে, `react-play` রিপোতে নিম্নোক্ত কমান্ড চালানোর মাধ্যমে ডিপেন্ডেন্সিগুলো ইনস্টল করুনঃ
 
 ```bash
 npm install
@@ -35,38 +35,37 @@ yarn install
 ```
 
 <details>
-<summary>If you don't have <code>yarn</code> installed on your PC, follow the steps below to install it.</summary>
+<summary>আপনার পিসি-তে <code>yarn</code> ইনস্টল করা না থাকলে নিম্নলিখিত ধাপগুলি অনুসরণ করে ইনস্টল করুন।</summary>
 
 **Windows**
 
-1. open your command prompt as administrator.
-2. write `corepack enable` and hit enter.
-3. then `npm install --global yarn`
+1. আপনার কমান্ড প্রম্পটকে অ্যাডমিনিস্ট্রেটর হিসাবে খুলুন।
+2. `corepack enable` লিখুন এবং enter চাপুন।
+3. তারপর `npm install --global yarn` লিখুন এবং enter চাপুন।
 
 **Linux**
 
-1. open the terminal and hit `npm install --global yarn`
+1. অনুগ্রহ করে টার্মিনাল খুলে `npm install --global yarn` কমান্ডটি চালান।
 
 **MacOS**
 
-1. open the terminal and hit `npm install --global yarn`
-   or
-   `brew install yarn`
+1. অনুগ্রহ করে টার্মিনাল খুলে `npm install --global yarn`
+   অথবা
+   `brew install yarn` কমান্ডটি চালান।
 
-**Or Download Package**
+**অথবা প্যাকেজ ডাউনলোড করুন**
 
-If you are unable to install yarn following the above-mentioned process, then you can simply download the package and install it. Visit the official website of Yarn; there you can just expand the "Alternative" section and it will ask for the version to download for Windows, Linux, or Mac.
-`https://classic.yarnpkg.com/en/docs/install#windows-stable`
+উপরে উল্লিখিত প্রক্রিয়া অনুসরণ করে Yarn ইনস্টল করতে না পারলে, আপনি সহজভাবে প্যাকেজটি ডাউনলোড করে ইনস্টল করতে পারেন। Yarn এর অফিসিয়াল ওয়েবসাইটে গিয়ে সেখানে "Alternative" সেকশনটি ভিজিট করুন; সেখানে Windows, Linux বা Mac এর জন্য Yarn ডাউনলোড করার জন্য আপনাকে ভার্সন নির্বাচন করতে বলা হবে।`https://classic.yarnpkg.com/en/docs/install#windows-stable`
 
 </details>
 
-> **Note**: `ReactPlay` runs on React 18. However, some of our dependencies are yet to upgrade to version 18. So please use the following command when you face difficulties installing the dependencies.
+> **নোট**: `ReactPlay` React 18 এ চালানো হয়। তবে, আমাদের কিছু ডিপেন্ডেন্সি এখনও ভার্সন 18 এ আপগ্রেড করেনি। তাই যদি ডিপেন্ডেন্সি ইনস্টল করতে সমস্যা হয়, তবে নিম্নলিখিত কমান্ড ব্যবহার করুন।
 
 ```bash
 npm install --legacy-peer-deps
 ```
 
-## Create a `.env` file at the root of your project folder with the following content,
+## আপনার প্রজেক্ট ফোল্ডারের রুটে একটি .env ফাইল তৈরি করুন এবং নিম্নলিখিত কনটেন্ট লিখুন।
 
 ```bash
 REACT_APP_NHOST_BACKEND_URL=https://rgkjmwftqtbpayoyolwh.nhost.run/
@@ -74,9 +73,9 @@ REACT_APP_NHOST_VERSION=v1
 REACT_APP_NHOST_ENDPOINT=graphql
 ```
 
-## Start the Development Mode
+## ডেভেলপমেন্ট মোড চালু করুন
 
-Use the following command to start the app in development mode:
+ডেভেলপমেন্ট মোডে অ্যাপটি চালানোর জন্য নিম্নলিখিত কমান্ডটি ব্যবহার করুন:
 
 ```bash
 npm start
@@ -86,18 +85,18 @@ or
 yarn start
 ```
 
-**Note**: The `start` script automatically invokes "linters" process. Should you need to run the app without `lint` use `start:nolint` instead.
-However, make sure that you run `start` the script at least once before committing your code. Code with linter error may not be reviewed.
+**দ্রষ্টব্য**: `start` স্ক্রিপ্ট স্বয়ংক্রিয়ভাবে "linters" প্রক্রিয়াকে কল করে। আপনি যদি `lint` ছাড়াই অ্যাপটি চালাতে চান তাহলে `start:nolint` ব্যবহার করুন।
+তবে নিশ্চিত হয়ে নিন যে আপনি আপনার কোড commit করার আগে কমপক্ষে একবার start স্ক্রিপ্টটি চালাচ্ছেন। linter এররযুক্ত কোড রিভিউ করা হবে না।
 
-It runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+এটি ডেভেলপমেন্ট মোডে অ্যাপটি চালায়। আপনার ব্রাউজারে দেখতে এটি [http://localhost:3000](http://localhost:3000) লিঙ্কে ওপেন করুন।
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+আপনি কোডে পরিবর্তন করলে পেজটি রিলোড হবে। আপনি কনসোলে যেকোনো lint এরর দেখতে পারবেন।
 
-## Format and lint the code
+## কোড ফরম্যাট করুন এবং লিন্ট করুন
 
-Use the following command to format and lint the code:
+কোড ফরম্যাট এবং লিন্ট করার জন্য নিম্নলিখিত কমান্ড ব্যবহার করুন:
 
-**Format the code**
+**কোড ফরম্যাট করুন**
 
 ```bash
 yarn run format
@@ -107,7 +106,7 @@ or
 npm run format
 ```
 
-**Lint the code to check the linting issue**
+**লিন্টিং ইস্যু চেক করতে কোড লিন্ট করুন**
 
 ```bash
 yarn run lint
@@ -117,7 +116,7 @@ or
 npm run lint
 ```
 
-**To fix the linting issue**
+**লিন্টিং ইস্যুগুলি ঠিক করতে**
 
 ```bash
 yarn run lint:fix
@@ -127,9 +126,9 @@ or
 npm run lint:fix
 ```
 
-## Build the App for Production
+## প্রোডাকশনের জন্য অ্যাপটি বিল্ড করুন
 
-Use the following command to build the app for production:
+প্রোডাকশনের জন্য অ্যাপটি বিল্ড করতে নিম্নলিখিত কমান্ডটি ব্যবহার করুন:
 
 ```bash
 yarn build
@@ -139,11 +138,11 @@ or
 npm build
 ```
 
-It builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+এটি অ্যাপটিকে `build` ফোল্ডারের মাধ্যমে প্রোডাকশনে বিল্ড করে। এটি সঠিকভাবে React কে প্রোডাকশন মোডে বান্ডেল করে এবং বিল্ডটি সেরা পারফরম্যান্সের জন্য অপটিমাইজ করে। বিল্ডটি মিনিফাইড হয় এবং ফাইলনেমে হ্যাশগুলি থাকে।
 
-## Test App Locally (E2E with Cypress)
+## অ্যাপটি locally টেস্ট করুন (E2E with Cypress)
 
-Use the following command to run cypress locally:
+নিম্নলিখিত কমান্ড ব্যবহার করে Cypress locally চালান।
 
 ```bash
 yarn cypress:open
@@ -153,6 +152,5 @@ or
 npm cypress:open
 ```
 
-It will open the cypress dashboard, through which you need to select `E2E Testing`.
-Once you are done with the selection you will get the option to choose your preferred browser in which you want to run the test.!
-Once you select the browser you need to click on `Start E2E Testing in <SELECTED_BROWSER_NAME>.` The chosen browser will pop up you can see a list of cypress tests, click on the test to start testing.!
+এটি Cypress ড্যাশবোর্ড খুলবে, যার মাধ্যমে আপনাকে `E2E Testing` সিলেক্ট করতে হবে।
+সিলেক্ট করা হলে, টেস্ট করার জন্য আপনার পছন্দসই ব্রাউজার সিলেক্ট করার অপশন পাবেন। ব্রাউজার নির্বাচন করার পর আপনাকে `Start E2E Testing in <SELECTED_BROWSER_NAME>` ক্লিক করতে হবে। নির্বাচিত ব্রাউজারটি একটি পপ আপ দেখাবে এবং আপনি Cypress টেস্টগুলির একটি তালিকা দেখতে পাবেন। টেস্ট শুরু করতে test-এ ক্লিক করুন।
