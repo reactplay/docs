@@ -92,8 +92,6 @@ Parameter details
   npm run start
   ```
 
-```
-
 - You should now see your play added to the [play list](http://localhost:3000/plays) page.
 <p align="center">
   <img src="https://res.cloudinary.com/atapas/image/upload/v1675172352/ReactPlay/Screenshot_2023-01-31_at_7.06.55_PM_gyck2r.png" alt="play" />
@@ -123,4 +121,3 @@ Once the Pull Request is approved and merged, we will notify you and add you as 
 ## ✋ Need Help?
 
 You can reach out to us at [ReactPlay Twitter Handle | @ReactPlayIO](https://twitter.com/ReactPlayIO) with a DM. Additionally, feel free to join our [Discord community](https://discord.gg/vrTxWUP8Am) for discussions.
-```
