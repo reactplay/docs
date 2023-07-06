@@ -52,7 +52,7 @@ sidebar_position: 1
 | Language        | হ্যাঁ        | অ্যাপ্লিকেশনটিকে আপনার পছন্দের ভাষা জানান। এটিতে **JavaScript** এবং **TypeScript** উভয় সাপোর্ট করে। আপনি যেকোনটি সিলেক্ট করতে পারেন।                                                                                                                                                                                                                                                                                           |
 | Style           | না           | অ্যাপ্লিকেশনটিকে আপনার পছন্দের স্টাইল জানান। এটিতে **CSS** এবং **SCSS** উভয় সাপোর্ট করে। আপনি যেকোনটি সিলেক্ট করতে পারেন।                                                                                                                                                                                                                                                                                                      |
 | Level           | না           | আপনাকে এখানে তিনটি লেভেল থেকে একটি নির্বাচন করতে হবে, "Beginner", "Intermediate", অথবা "Advanced". অনুগ্রহ করে `Play` এর জন্য একটি লেভেল নির্বাচন করুন। এই লেভেলের মাধ্যমে React ব্যবহার করে একট `Play` ডেভেলপ করার সম্ভাব্য জটিলতা প্রকাশ করা হয়।                                                                                                                                                                             |
-| Github Username | হ্যাঁ        | `Play` তৈরি করতে আপনার Github username দিন যাতে আপনাকে `Play`-এর ক্রিয়েটর হিসাবে চিহ্নিত করা যায়।                                                                                                                                                                                                                                                                                                                             |
+| Github Username | হ্যাঁ        | `Play` তৈরি করতে আপনার গিটহাব username দিন যাতে আপনাকে `Play`-এর ক্রিয়েটর হিসাবে চিহ্নিত করা যায়।                                                                                                                                                                                                                                                                                                                             |
 | Tags            | না           | অনুগ্রহ করে কমা দ্বারা পৃথক করা ট্যাগের তালিকা প্রদান করুন। উদাহরণঃ JSX, Hooks                                                                                                                                                                                                                                                                                                                                                 |
 | Cover Image URL | না           | `play list` পেইজে `Play` টি থাম্বনেলসহ প্রদর্শন করার জন্য কভার ইমেজ ব্যবহার করা হয়। অনুগ্রহ করে কভার ইমেজের জন্য একটি লিংক প্রদান করুন, যা পাবলিকভাবে অ্যাক্সেস যোগ্য একটি URL, উদাহরণঃ https://res.cloudinary.com/reactplay/image/upload/v1649060528/demos/id-card_pdvyvz.png। এছাড়া, আপনি play ফোল্ডারের রুটে cover.png ফাইল রাখতে পারেন। যদি আপনার কাছে কভার ইমেজ না থাকে, তবে অ্যাপ্লিকেশন ডিফল্ট কভার ইমেজ ব্যবহার করবে। |
 | Blog URL        | না           | আপনি যদি এই `Play` সম্পর্কে ব্লগ লিখে থাকেন, তাহলে অনুগ্রহ করে আপনার ব্লগ আর্টিকেল পেইজের লিঙ্ক প্রদান করুন।                                                                                                                                                                                                                                                                                                                   |
@@ -76,9 +76,9 @@ sidebar_position: 1
   **দ্রষ্টব্য:** উপরের কমান্ডটি চালানোর পর, যদি play ফোল্ডার <reactplay_directory>/src/plays/<your_play_name> এখনও খালি থাকে, তবে আপনি সম্ভবত পুরানো ভার্সনের প্যাকেজ ব্যবহার করছেন। এই ক্ষেত্রে `@latest` ব্যবহার করুন
   `bash
 npx create-react-play@latest -c <the_play_id>`
-  <p align="center">
-  <img src="https://res.cloudinary.com/atapas/image/upload/v1675172352/ReactPlay/Screenshot_2023-01-31_at_7.06.07_PM_jhbcbl.png" alt="copy-command" />
-  </p>
+    <p align="center">
+    <img src="https://res.cloudinary.com/atapas/image/upload/v1675172352/ReactPlay/Screenshot_2023-01-31_at_7.06.07_PM_jhbcbl.png" alt="copy-command" />
+    </p>
 
 - অ্যাপ্লিকেশনটি চালু করুন
 

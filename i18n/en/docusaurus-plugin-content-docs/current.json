@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.How To Guides": {
+    "message": "How To Guides",
+    "description": "The label for category How To Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.How To Guides.link.generated-index.description": {
+    "message": "These guides will teach you how to do things in ReactPlay.",
+    "description": "The generated-index page description for category How To Guides in sidebar tutorialSidebar"
+  }
+}

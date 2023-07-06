@@ -73,8 +73,7 @@ Parameter details
 
   **Note:** If the play folder `<reactplay_directory>/src/plays/<your_play_name>` remain empty after running above command that means you might be in some older version of the package. Use `@latest` in that case
   `bash
-npx create-react-play@latest -c <the_play_id>
-`
+  npx create-react-play@latest -c <the_play_id>
   <p align="center">
   <img src="https://res.cloudinary.com/atapas/image/upload/v1675172352/ReactPlay/Screenshot_2023-01-31_at_7.06.07_PM_jhbcbl.png" alt="copy-command" />
   </p>
