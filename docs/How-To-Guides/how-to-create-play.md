@@ -72,10 +72,12 @@ Parameter details
   npx create-react-play -c <the_play_id>
   ```
 
-  **Note:** If the play folder `<reactplay_directory>/src/plays/<your_play_name>` remain empty after running above command that means you might be in some older version of the package. Use `@latest` in that case
-  `bash
-npx create-react-play@latest -c <the_play_id>
-`
+  **Note:** If the play folder `<reactplay_directory>/src/plays/<your_play_name>` remain empty after running above command that means you might be in some older version of the package. Use `@latest` in that case.
+
+  ```bash
+  npx create-react-play@latest -c <the_play_id>
+  ```
+
   <p align="center">
       <img src="https://res.cloudinary.com/atapas/image/upload/v1675172352/ReactPlay/Screenshot_2023-01-31_at_7.06.07_PM_jhbcbl.png" alt="copy-command" />
   </p>
@@ -89,6 +91,8 @@ npx create-react-play@latest -c <the_play_id>
 
   npm run start
   ```
+
+```
 
 - You should now see your play added to the [play list](http://localhost:3000/plays) page.
 <p align="center">
@@ -119,3 +123,4 @@ Once the Pull Request is approved and merged, we will notify you and add you as 
 ## ✋ Need Help?
 
 You can reach out to us at [ReactPlay Twitter Handle | @ReactPlayIO](https://twitter.com/ReactPlayIO) with a DM. Additionally, feel free to join our [Discord community](https://discord.gg/vrTxWUP8Am) for discussions.
+```
