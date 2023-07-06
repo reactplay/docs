@@ -2,9 +2,9 @@
 sidebar_position: 5
 ---
 
-# APIs hook
+# APIs হুক
 
-In ReactPlay, we work with APIs by using our custom-made react hooks. They are as follows:
+ReactPlay এ, আমরা আমাদের নিজস্ব তৈরি করা রিয়েক্ট হুক ব্যবহার করে API-এর সঙ্গে কাজ করি। নিম্নে তা দেওয়া হলোঃ
 
 1. [useCacheResponse](#usecacheresponse)
 1. [useContributors](#usecontributors)
@@ -15,22 +15,22 @@ In ReactPlay, we work with APIs by using our custom-made react hooks. They are a
 1. [useLikePlays](#uselikeplays)
 1. [useLocalStorage](#uselocalstorage)
 
-In this section, we will discuss each of them in detail.
+এই সেকশনে আমরা প্রতিটি হুককে বিস্তারিতভাবে আলোচনা করব।
 
 ## useCacheResponse
 
-As the name suggests, this hook can be used to create a temporary cache for any kind of data in our codebase (not on the browser).
+নাম থেকেই অনুমান করা যায়, এই হুকটি ব্যবহার করে কোডবেসে (ব্রাউজারে নয়) যেকোনো ধরণের ডেটা জন্য একটি অস্থায়ী ক্যাশ তৈরি করা যায়।
 
-**Input Parameters:**
+**ইনপুট প্যারামিটার:**
 
 - None
 
-**Returned Value** - Array
+**রিটার্নকৃত মান** - অ্যারে
 
-- Getter function to fetch the `cached value` based on the `key`
-- Setter function to create/update the `value` against the `key`
+- `key` এর উপর ভিত্তি করে `cached value` ফেচ করার জন্য গেটার ফাংশন
+- `key` এর বিপরীতে `value` তৈরি / আপডেট করার জন্য সেটার ফাংশন
 
-**Example**
+**উদাহরণ**
 
 ```jsx
 const [getCacheResponse, setCacheResponse] = useCacheResponse();
@@ -40,24 +40,24 @@ setCacheResponse(FILTER_DATA_RESPONSE, response);
 const isCachedResponse = getCacheResponse(FILTER_DATA_RESPONSE);
 ```
 
-In the above example, we are setting the `FILTER_DATA_RESPONSE` value based on the API response. This value is now stored as a cached response. We can then use `getCacheResponse` to access this cached value by passing the same key of `FILTER_DATA_RESPONSE`
+উপরের উদাহরণে, আমরা API রেসপন্সের উপরে ভিত্তি করে `FILTER_DATA_RESPONSE` ভ্যালুটি সেট করছি। এই ভ্যালুটি এখন ক্যাশ রেসপন্স হিসাবে সংরক্ষিত হয়েছে। আমরা এখানে `getCacheResponse` ব্যবহার করে `FILTER_DATA_RESPONSE` এর একই key পাস করে এই ক্যাশ ভ্যালুকে অ্যাক্সেস করতে পারি।
 
 ## useContributors
 
-This custom hook helps in retrieving the information about [ReactPlay's](https://github.com/reactplay/react-play) contributors.
+এই কাস্টম হুকটি [ReactPlay's](https://github.com/reactplay/react-play) এর কন্ট্রিবিউটরদের তথ্য পেতে সহায়তা করে।
 
-**Input Parameters:**
+**ইনপুট প্যারামিটার:**
 
-- `sorted`: a boolean value
-  If `true` is passed, the result would be a sorted list of contributors based on the number of contributions (highest to lowest).
+- `sorted`: একটি বুলিয়ান মান
+  যদি `true` পাস করা হয়, ফলাফল হবে কন্ট্রিবিউশনের সংখ্যা অনুযায়ী সাজানো কন্ট্রিবিউটরদের একটি সাজানো তালিকা (সর্বাধিক থেকে সর্বনিম্ন)
 
-**Returned Value** - Object
+**রিটার্নকৃত মান** - অবজেক্ট
 
-- An `isLoading` state represents a loader while the data is fetched.
-- The `error` object contains details about any error that occurred while trying to fetch the data.
-- The `data` object contains the list of contributors' information
+- `isLoading` স্টেট ডাটা ফেচ হওয়ার সময় লোডার প্রদর্শন করে।
+- `error` অবজেক্টটি ডেটা ফেচ করার সময় সংঘটিত কোনও ত্রুটির সম্পর্কে বিস্তারিত তথ্য ধারণ করে।
+- `data` অবজেক্টটি কন্ট্রিবিউটরদের তথ্যের তালিকা ধারণ করে।
 
-**Example**
+**উদাহরণ**
 
 ```jsx
 const { data, error, isLoading } = useContributors(true);
@@ -82,19 +82,19 @@ return (
 
 ## useFeaturedPlays
 
-Invoking `useFeaturedPlays` hook would internally run a GraphQL query to retrieve the list of featured plays.
+`useFeaturedPlays` হুকটি ইনটারনালি একটি GraphQL কুয়েরি চালায় যার মাধ্যমে ফিচার play-সমূহের একটি তালিকা পাওয়া যায়।
 
-**Input Parameters:**
+**ইনপুট প্যারামিটার**
 
 - None
 
-**Returned Value** - Array
+**রিটার্নকৃত মান** - অ্যারে
 
-- A `loading` state that represents a loader while the data is fetched.
-- The `error` object contains details about any error that occurred while trying to fetch the data.
-- The `data` object contains the list of featured plays as an array.
+- `isLoading` স্টেট ডাটা ফেচ হওয়ার সময় লোডার প্রদর্শন করে।
+- `error` অবজেক্টটি ডেটা ফেচ করার সময় সংঘটিত কোনও ত্রুটির সম্পর্কে বিস্তারিত তথ্য ধারণ করে।
+- `data` অবজেক্টটি অ্যারে আকারে ফিচার play-সমূহের তালিকা ধারণ করে।
 
-**Example**
+**উদাহরণ**
 
 ```jsx
 const [loading, error, data] = useFeaturedPlays();
@@ -112,20 +112,20 @@ return (
 
 ## useFetch
 
-`useFetch` is a custom hook that creates a wrapper around the [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) call. Although we use GraphQL to fetch data on react play, this hook would be useful while making REST API calls that are required while creating custom plays.
+`useFetch` হল একটি কাস্টম হুক যা [ফেচ](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) কলের সময় এর চারপাশে একটি রেপার তৈরি করে। যদিও আমরা রিয়েক্ট প্লে ডেটা ফেচ করতে গ্রাফকিউএল ব্যবহার করি, কিন্তু কাস্টম প্লে তৈরি করার সময় প্রয়োজনীয় REST API কল করতে `useFetch` হুক ব্যবহারকারীকে সহায়তা করবে।
 
-**Input Parameters:**
+**ইনপুট প্যারামিটার:**
 
-- `url`: Endpoint URL of the API
-- `options`: An object to provide API options
+- `url`: API-র এন্ডপয়েন্ট URL।
+- `options`:: API অপশনসমূহ প্রদানের জন্য একটি অবজেক্ট।
 
-**Returned Value** - Object
+**রিটার্নকৃত মান** - অবজেক্ট
 
-- A `loading` state that represents a loader while the data is fetched.
-- The `error` object contains details about any error that occurred while trying to fetch the data.
-- The `data` object contains the response from the API
+- `isLoading` স্টেট ডাটা ফেচ হওয়ার সময় লোডার প্রদর্শন করে।
+- `error` অবজেক্টটি ডেটা ফেচ করার সময় সংঘটিত কোনও ত্রুটির সম্পর্কে বিস্তারিত তথ্য ধারণ করে।
+- `data` অবজেক্টটি API হতে রেসপন্স ধারণ করে।
 
-**Example**
+**উদাহরণ**
 
 ```jsx
 const { data, loading, error } = useFetch(API_BASE_URL);
@@ -141,19 +141,19 @@ return (
 
 ## useGetPlays
 
-Invoking `useGetPlays` hook would internally run a GraphQL query to retrieve the list of all the plays. This custom hook considers any filters that are applied through `Filter Play` options as well as any value provided in the search bar.
+`useGetPlays` হুকটি ইনটারনালি একটি GraphQL কুয়েরি চালায় যার মাধ্যমে play-সমূহের একটি তালিকা পাওয়া যায়। এই কাস্টম হুকটি `Filter Play` অপশনগুলির মাধ্যমে প্রয়োগ করা ফিল্টারগুলি এবং সার্চ বারে প্রদত্ত যেকোনো মানও বিবেচনা করে।
 
-**Input Parameters:**
+**ইনপুট প্যারামিটার:**
 
 - None
 
-**Returned Value** - Array
+**রিটার্নকৃত মান** - অ্যারে
 
-- A `loading` state that represents a loader while the data is fetched.
-- The `error` object contains details about any error that occurred while trying to fetch the data.
-- The `plays` object contains the list of plays as an array.
+- `isLoading` স্টেট ডাটা ফেচ হওয়ার সময় লোডার প্রদর্শন করে।
+- `error` অবজেক্টটি ডেটা ফেচ করার সময় সংঘটিত কোনও ত্রুটির সম্পর্কে বিস্তারিত তথ্য ধারণ করে।
+- `data` অবজেক্টটি অ্যারে আকারে play-সমূহের তালিকা ধারণ করে।
 
-**Example**
+**উদাহরণ**
 
 ```jsx
 const [loading, error, plays] = useGetPlays();
@@ -177,19 +177,21 @@ if (plays?.length === 0 || error) {
 
 ## useGitHub
 
-`useGitHub` fetches the GitHub API to obtain information about a given user.
+`useGitHub` হুকটি প্রদত্ত ব্যবহারকারীর সম্পর্কে তথ্য পেতে গিটহাব API-কে ফেচ করে।
 
-**Input Parameters:**
+**ইনপুট প্যারামিটার:**
 
-- `username`: GitHub username
+- `username`: গিটহাব ব্যবহারকারীর নাম
 
-**Returned Value** - object
+**রিটার্নকৃত মান** - অবজেক্ট
 
-- An `isLoading` state represents a loader while the data is fetched.
-- The `error` object contains details about any error that occurred while trying to fetch the data.
-- The `data` object contains the user's GitHub information.
+অ্যারে
 
-**Example**
+- `isLoading` স্টেট ডাটা ফেচ হওয়ার সময় লোডার প্রদর্শন করে।
+- `error` অবজেক্টটি ডেটা ফেচ করার সময় সংঘটিত কোনও ত্রুটির সম্পর্কে বিস্তারিত তথ্য ধারণ করে।
+- `data` অবজেক্টটি গিটহাব ব্যবহারকারীর তথ্য ধারণ করে।
+
+**উদাহরণ**
 
 ```jsx
 const { data, error, isLoading } = useGitHub(`username`);
@@ -205,18 +207,18 @@ return (
 
 ## useLikePlays
 
-This custom hook creates an abstraction around the `likePlay` and `unlikePlay` functions.
+এই কাস্টম হুকটি `likePlay` এবং `unlikePlay` ফাংশনগুলির চারপাশে একটি অ্যাবস্ট্র্যাকশন তৈরি করে।
 
-**Input Parameters:**
+**ইনপুট প্যারামিটার:**
 
 - None
 
-**Returned Value** - Object
+**রিটার্নকৃত মান** - অবজেক্ট
 
-- `likePlay` function which takes a `playObject` that has been `liked`
-- `unlikePlay` function which takes a `playObject` that has been `unliked`
+- `likePlay` ফাংশন একটি `playObject` গ্রহণ করে যা `liked` করা হয়েছে
+- `unlikePlay` ফাংশন একটি `playObject` গ্রহণ করে যা `unliked` করা হয়েছে
 
-**Example**
+**উদাহরণ**
 
 ```jsx
 const { likePlay, unLikePlay } = useLikePlays();
@@ -228,19 +230,19 @@ await unLikePlay({ ...mutationObj, liked: !likeObj.liked });
 
 ## useLocalStorage
 
-This hook acts as an abstraction function for getting and setting [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) values.
+এই হুকটি [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)-এর ভ্যালুগুলি পেতে এবং সেট করতে একটি অ্যাবস্ট্র্যাকশন ফাংশন হিসাবে কাজ করে।
 
-**Input Parameters:**
+**ইনপুট প্যারামিটার:**
 
 - `key`
 - `initialValue`
 
-**Returned Value** - Array
+**রিটার্নকৃত মান** - অ্যারে
 
-- `storedValue` against the provided `key`
-- `setValue` is a function to update the `storedValue` data on localStorage
+- `storedValue` প্রদত্ত `key` এর বিপরীতে সংরক্ষিত মান
+- `setValue` লোকালস্টোরেজে `storedValue` ডেটা আপডেট করার জন্য একটি ফাংশন
 
-**Example**
+**উদাহরণ**
 
 ```jsx
 const [localStoreExpenses, setLocalStoreExpenses] = useLocalStorage(
