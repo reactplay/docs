@@ -14,7 +14,7 @@ New to open-source? Follow [this guide](https://opensource.guide/how-to-contribu
 
 ## Getting Started
 
-As a first step we recommend reading our contribution and code-of-conduct guides. The majority of our work resides in [react-play](https://github.com/reactplay/react-play) and [docs](https://github.com/reactplay/docs) repository. Kindly read the `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` files from the respective repositories to get acquainted with our requirements.
+As a first step we recommend reading our contribution and code-of-conduct guides. The majority of our work resides in [react-play](https://github.com/reactplay/react-play) and [docs](https://github.com/reactplay/docs) repository. Kindly read the [CONTRIBUTING.md](https://github.com/reactplay/docs/blob/main/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/reactplay/docs/blob/main/CODE_OF_CONDUCT.md) files from the respective repositories to get acquainted with our requirements.
 
 ## Nature of Contribution
 
