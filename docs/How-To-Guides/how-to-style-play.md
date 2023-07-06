@@ -29,8 +29,7 @@ function MyComponent() {
 
 ## Don'ts
 
-- Do not directly style the elements. Instead, use CSS classes to style your components. This approach helps to keep your code organized and makes it easier to maintain.
-- Do not use inline styles unless necessary. Inline styles can make your code harder to read and maintain, and they can also negatively impact performance. For example, instead of using inline styles like this:
+- Do not use inline styles unless necessary. Inline styles can make your code harder to read and maintain, and they can also negatively impact performance. Instead, use CSS classes to style your components. This approach helps to keep your code organized and makes it easier to maintain. For example, instead of using inline styles like this:
 
 ```jsx
 function MyComponent() {
@@ -69,6 +68,8 @@ function MyComponent() {
   return <div className={styles["my-play__my-class"]}>Hello World</div>;
 }
 ```
+
+- Do not override the styles using `!important` CSS property. They override all the other declarations and make the CSS code difficult to maintain and debug. Instead, you can use other options to override styles such as using the source order rule, the inherited property rule, or the specificity rule.
 
 By following these dos and don'ts, you can ensure that your play is well-styled, maintainable, and scalable. Remember to choose the approach that works best for your project and to keep your code organized and easy to read.
 
