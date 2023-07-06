@@ -76,9 +76,10 @@ sidebar_position: 1
   **দ্রষ্টব্য:** উপরের কমান্ডটি চালানোর পর, যদি play ফোল্ডার <reactplay_directory>/src/plays/<your_play_name> এখনও খালি থাকে, তবে আপনি সম্ভবত পুরানো ভার্সনের প্যাকেজ ব্যবহার করছেন। এই ক্ষেত্রে `@latest` ব্যবহার করুন
   `bash
 npx create-react-play@latest -c <the_play_id>`
-    <p align="center">
-    <img src="https://res.cloudinary.com/atapas/image/upload/v1675172352/ReactPlay/Screenshot_2023-01-31_at_7.06.07_PM_jhbcbl.png" alt="copy-command" />
-    </p>
+
+ <p align="center">
+      <img src="https://res.cloudinary.com/atapas/image/upload/v1675172352/ReactPlay/Screenshot_2023-01-31_at_7.06.07_PM_jhbcbl.png" alt="copy-command" />
+ </p>
 
 - অ্যাপ্লিকেশনটি চালু করুন
 
