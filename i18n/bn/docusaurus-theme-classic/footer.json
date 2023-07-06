@@ -36,7 +36,7 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/reactplay/docs/"
   },
   "copyright": {
-    "message": "কপিরাইট © ২০২৩ হোম। ডোকুস্যারাস দিয়ে তৈরি করা।",
+    "message": "কপিরাইট © ২০২৩ হোম। docusaurus দিয়ে তৈরি করা।",
     "description": "The footer copyright"
   }
 }
