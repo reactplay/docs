@@ -1,13 +1,18 @@
 # How to add styling to your Play
 
-Styling is an essential part of any play, and it's crucial to follow best practices to ensure that your code is maintainable and scalable. Here are some **dos and don'ts** to keep in mind when adding styling to your play:
+Styling is an essential part of any play, and it's crucial to follow best practices to ensure that your code is maintainable and scalable. Here are some **Dos and Don'ts** to keep in mind when adding styling to your play:
 
 ## Do's
 
-- Use class names that start with the play name and are in the kebab case. This naming convention helps to keep your code organized and easy to read. For example, if your play name is **"my-play"**, your class name should be `my-play__my-class`.
-- Use CSS libraries that provide additional features such as scoped styles and automatic vendor prefixing. ReactPlay has been configured to support Tailwind CSS.
+- Use class names that start with the play name and are in the kebab case. This naming convention helps to keep your code organized and easy to read.
+  For example, if your play name is `"my-play"`, your class name should be `my-play__my-class`.
 
-- Use CSS modules to style your components. CSS modules allow you to write modular and reusable CSS code that is scoped to a specific component. For example, you can create a CSS module for your component like this:
+- Use CSS libraries that provide additional features such as scoped styles and automatic [vendor prefixing](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix).
+
+- `Tailwind CSS` support has been enabled in ReactPlay. You can use this CSS library in your play.
+
+- Use CSS modules to style your components. CSS modules allow you to write modular and reusable CSS code that is scoped to a specific component.
+  For example, you can create a CSS module for your component like this:
 
 ```css
 .my-play__my-class {
@@ -25,11 +30,12 @@ function MyComponent() {
 }
 ```
 
-- Use styled-components to create reusable and composable components. Styled components allow you to write CSS code that is scoped to a specific component and can be reused across your project.
+- Use `styled-components` to create reusable and composable components. `styled-components` allow you to write CSS code that is scoped to a specific component and can be reused across your project.
 
 ## Don'ts
 
-- Do not use inline styles unless necessary. Inline styles can make your code harder to read and maintain, and they can also negatively impact performance. Instead, use CSS classes to style your components. This approach helps to keep your code organized and makes it easier to maintain. For example, instead of using inline styles like this:
+- Do not use inline styles unless necessary. Inline styles can make your code harder to read and maintain, and they can also negatively impact performance. Instead, use CSS classes to style your components. This approach helps to keep your code organized and makes it easier to maintain.
+  For example, instead of using inline styles like this:
 
 ```jsx
 function MyComponent() {
@@ -51,7 +57,8 @@ function MyComponent() {
 }
 ```
 
-- Do not use global styles. Global styles can cause naming conflicts and make it harder to maintain your code. Instead, use CSS modules or styled-components to create modular and reusable CSS code. For example, you can create a CSS module for your component like this:
+- Do not use global styles. Global styles can cause naming conflicts and make it harder to maintain your code. Instead, use CSS modules or `styled-components` to create modular and reusable CSS code.
+  For example, you can create a CSS module for your component like this:
 
 ```css
 .my-play__my-class {
