@@ -69,9 +69,9 @@ npm install --legacy-peer-deps
 ## Create a `.env` file at the root of your project folder with the following content,
 
 ```bash
-REACT_APP_NHOST_BACKEND_URL=https://rgkjmwftqtbpayoyolwh.nhost.run/
-REACT_APP_NHOST_VERSION=v1
-REACT_APP_NHOST_ENDPOINT=graphql
+VITE_NHOST_BACKEND_URL=https://rgkjmwftqtbpayoyolwh.nhost.run/
+VITE_NHOST_VERSION=v1
+VITE_NHOST_ENDPOINT=graphql
 ```
 
 ## Start the Development Mode
