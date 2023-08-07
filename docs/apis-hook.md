@@ -196,7 +196,7 @@ const { data, error, isLoading } = useGitHub(`username`);
 
 return (
   <div className="data-container">
-    {loading && <p>Loading...</p>}
+    {isLoading && <p>Loading...</p>}
     {error && <p>{error?.message ?? "Something went wrong"}</p>}
     {data && <p>{data.login}</p>}
   </div>
