@@ -29,7 +29,7 @@ We also love `typo` issues. If you find a typo somewhere, get in touch us and cr
 - Found a bug. Great! Go ahead and open a [bug report](https://github.com/reactplay/react-play/issues/new?assignees=&labels=bug&template=bug-report.yml&title=%F0%9F%90%9B+%5BBug+report%5D%3A+)
 - You could also improve the [docs](https://github.com/reactplay/docs) which would help us immensely.
 - You could give us feedback, suggestions and help us improve our UX.
-- Have interest in interacting with public, you are welcome to manage our social media handles like [Twitter](https://twitter.com/ReactPlayIO), [LinkedIn](https://www.linkedin.com/company/reactplay/) and [Facebook](https://web.facebook.com/groups/reactplay).
+- Have an interest in interacting with the public? You are welcome to manage our social media handles like [Twitter](https://twitter.com/ReactPlayIO), [LinkedIn](https://www.linkedin.com/company/reactplay/), and [Facebook](https://web.facebook.com/groups/reactplay).
 - Have a flair for writing, you could publish articles on our [blog](https://blog.reactplay.io/).
 - You could also be our advocate and help us in arranging events, sponsors and support.
 
