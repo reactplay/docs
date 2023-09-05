@@ -7,7 +7,7 @@ Styling is an essential part of any play, and it's crucial to follow best practi
 - Use class names that start with the play name and are in the kebab case. This naming convention helps to keep your code organized and easy to read.
   For example, if your play name is `"my-play"`, your class name should be `my-play__my-class`.
 
-- Use CSS libraries that provide additional features such as scoped styles and automatic [vendor prefixing](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix).
+- Use CSS libraries that provide additional features such as [scoped styles](https://developer.mozilla.org/en-US/docs/Web/CSS/:scope) and automatic [vendor prefixing](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix).
 
 - `Tailwind CSS` support has been enabled in ReactPlay. You can use this CSS library in your play.
 
@@ -35,7 +35,7 @@ function MyComponent() {
 ## Don'ts
 
 - Do not use inline styles unless necessary. Inline styles can make your code harder to read and maintain, and they can also negatively impact performance. Instead, use CSS classes to style your components. This approach helps to keep your code organized and makes it easier to maintain.
-  For example, instead of using inline styles like this:
+For example, instead of using inline styles like this:
 
 ```jsx
 function MyComponent() {
