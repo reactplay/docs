@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# How to add styling to your Play
+# How to Add Styling to Your Play
 
 Styling is an essential part of any play, and it's crucial to follow best practices to ensure that your code is maintainable and scalable. Here are some **Dos and Don'ts** to keep in mind when adding styling to your play:
 

@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# How to become a Maintainer of ReactPlay
+# How to Become a ReactPlay Open Source Project Maintainer
 
-ReactPlay is an open-source community that welcomes volunteers to become maintainers. If you are interested in becoming a maintainer, here are the criteria and requirements you need to meet.
+[ReactPlay](https://reactplay.io/) is an open-source community that welcomes volunteers to become maintainers. If you are interested in becoming a maintainer, here are the criteria and requirements you need to meet.
 
 ## About the Role
 
@@ -16,7 +16,7 @@ ReactPlay is an open-source community that welcomes volunteers to become maintai
 
 - Be a Contributor first. Make sure you have contributed to at least 2 issues to understand the ReactPlay ecosystem, processes, and accepting criteria for any contributions.
 - Make a short write-up explaining why do you want to take up this role? This write-up should be no more than 150 words.
-- Schedule a meeting with [tapas.adhikary@gmail.com](mailto:tapas.adhikary@gmail.com) for 15 mins to discuss your points.
+- Schedule a meeting with [https://zcal.co/tapasadhikary/15min](https://zcal.co/tapasadhikary/15min) for 15 mins to discuss your points.
 
 Don't forget to read out everything that is listed here: https://opensource.guide/best-practices/
 
