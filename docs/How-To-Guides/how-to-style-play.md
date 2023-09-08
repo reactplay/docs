@@ -1,4 +1,8 @@
-# How to add styling to your Play
+---
+sidebar_position: 2
+---
+
+# How to Add Styling to Your Play
 
 Styling is an essential part of any play, and it's crucial to follow best practices to ensure that your code is maintainable and scalable. Here are some **Dos and Don'ts** to keep in mind when adding styling to your play:
 
@@ -35,7 +39,7 @@ function MyComponent() {
 ## Don'ts
 
 - Do not use inline styles unless necessary. Inline styles can make your code harder to read and maintain, and they can also negatively impact performance. Instead, use CSS classes to style your components. This approach helps to keep your code organized and makes it easier to maintain.
-For example, instead of using inline styles like this:
+  For example, instead of using inline styles like this:
 
 ```jsx
 function MyComponent() {
