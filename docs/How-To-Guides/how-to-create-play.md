@@ -109,6 +109,8 @@ Parameter details
 
 - Continue developing your play. Happy coding.
 
+> **Note:** When creating different component files for your play _(A separate file to create a component that includes JSX elements, like a custom button component for example)_, please use either a `.jsx`, `.ts` or `.tsx` file extension. This is due to our platform now using Vite for building.
+
 ## 👀 Submitting a Play for Review
 
 After you done with coding for your `Play`, you can submit it for review. Submitting a `Play` for review is a two step process.
