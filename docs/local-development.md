@@ -69,6 +69,7 @@ npm install --legacy-peer-deps
 ## Create a `.env` file at the root of your project folder with the following content,
 
 ```bash
+REACT_APP_PLAY_API_URL=https://api.github.com/repos/reactplay
 REACT_APP_NHOST_BACKEND_URL=https://rgkjmwftqtbpayoyolwh.nhost.run/
 REACT_APP_NHOST_VERSION=v1
 REACT_APP_NHOST_ENDPOINT=graphql
