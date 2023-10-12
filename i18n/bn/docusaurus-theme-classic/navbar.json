@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "হোম",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "হোম লোগো",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Guides": {
+    "message": "গাইডস",
+    "description": "Navbar item with label Guides"
+  },
+  "item.label.Blog": {
+    "message": "ব্লগ",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.ReactPlay": {
+    "message": "ReactPlay",
+    "description": "Navbar item with label ReactPlay"
+  },
+  "item.label.GitHub": {
+    "message": "গিটহাব",
+    "description": "Navbar item with label GitHub"
+  }
+}
