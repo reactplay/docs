@@ -68,9 +68,17 @@ npm install --legacy-peer-deps
 ## আপনার প্রজেক্ট ফোল্ডারের রুটে একটি .env ফাইল তৈরি করুন এবং নিম্নলিখিত কনটেন্ট লিখুন।
 
 ```bash
-REACT_APP_NHOST_BACKEND_URL=https://rgkjmwftqtbpayoyolwh.nhost.run/
+REACT_APP_PLAY_API_URL=https://api.github.com/repos/reactplay
+REACT_APP_NHOST_BACKEND_URL=https://rgkjmwftqtbpayoyolwh.nhost.run
 REACT_APP_NHOST_VERSION=v1
 REACT_APP_NHOST_ENDPOINT=graphql
+REACT_APP_PLAY_WEB_SVC=https://api.reactplay.io/.netlify/functions/server
+DISABLE_ESLINT_PLUGIN=true
+REACT_APP_ACTIVITIES_ON=true
+REACT_APP_ACTIVITY_ID=hackrplay
+REACT_APP_DADJOKES_URL=https://jokeapi-v2.p.rapidapi.com/joke/
+REACT_APP_DADJOKES_APIKEY='b71df95c75msha446fab91d0e935p1d0262jsn1d938cb85502'
+REACT_APP_DADJOKES_APIHOST='jokeapi-v2.p.rapidapi.com'
 ```
 
 ## ডেভেলপমেন্ট মোড চালু করুন
