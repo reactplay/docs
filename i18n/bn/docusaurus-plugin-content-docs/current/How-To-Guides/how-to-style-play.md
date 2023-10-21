@@ -62,7 +62,7 @@ function MyComponent() {
 ```
 
 - গ্লোবাল স্টাইল ব্যবহার করবেন না। গ্লোবাল স্টাইল নেমিং সংঘর্ষ সৃষ্টি করতে পারে এবং আপনার কোডটি সংরক্ষণ করা কঠিন করতে পারে। তাই, মডিউল এবং পুনর্ব্যবহারযোগ্য CSS কোড তৈরি করতে CSS মডিউল বা 'styled-components' ব্যবহার করুন।
-  For example, you can create a CSS module for your component like this:
+  উদাহরণস্বরূপ, আপনি আপনার কম্পোনেন্টের জন্য একটি CSS মডিউল তৈরি করতে পারেন এই ভাবে:
 
 ```css
 .my-play__my-class {
@@ -70,7 +70,7 @@ function MyComponent() {
 }
 ```
 
-And then import it into your component like this:
+এবং তারপর এটি আপনার কম্পোনেন্টে এভাবে ইম্পোর্ট করুন:
 
 ```jsx
 import styles from "./MyComponent.module.css";
@@ -80,10 +80,11 @@ function MyComponent() {
 }
 ```
 
-- Do not override the styles using `!important` CSS property. They override all the other declarations and make the CSS code difficult to maintain and debug. Instead, you can use other options to override styles such as using the source order rule, the inherited property rule, or the specificity rule.
+- `!important` CSS প্রপার্টি ব্যবহার করে স্টাইল ওভাররাইড করবেন না। এটি অন্যান্য সমস্ত ডিক্লারেশন ওভাররাইড করে এবং css কোড সংরক্ষণ এবং ডিবাগ করা কঠিন করে। বরং, আপনি অন্য বিকল্প ব্যবহার করতে পারেন যেমন সোর্স অর্ডার নিয়ম, ইনহেরিটেড প্রপার্টি নিয়ম, বা স্পেসিফিসিটি নিয়ম।
 
-By following these dos and don'ts, you can ensure that your play is well-styled, maintainable, and scalable. Remember to choose the approach that works best for your project and to keep your code organized and easy to read.
+"এই করার এবং না করার নিয়মগুলি অনুসরণ করে, আপনি নিশ্চিত করতে পারেন যে আপনার প্লে সুন্দরভাবে স্টাইল করা, সংরক্ষণযোগ্য, এবং স্কেলযোগ্য। আপনার প্রজেক্টের জন্য সর্বোত্তম কাজ করে এমন পদ্ধতি বেছে নিতে এবং আপনার কোডকে সংগঠিত এবং রিডেবল রাখতে মনে রাখবেন।
 
-## ✋ Need Help?
+## ✋ সাহায্য প্রয়োজন?
 
-You can reach out to us at [ReactPlay Twitter Handle | @ReactPlayIO](https://twitter.com/ReactPlayIO) with a DM. Additionally, feel free to join our [Discord community](https://discord.gg/vrTxWUP8Am) for discussions.
+আপনি আমাদের সাথে [ReactPlay Twitter Handle | @ReactPlayIO](https://twitter.com/ReactPlayIO).-তে
+সরাসরি মেসেজ দিয়ে যোগাযোগ করতে পারেন। এছাড়াও, আলোচনার জন্য আমাদের [Discord community](https://discord.gg/vrTxWUP8Am) কমিউনিটিতে যোগদান করতে আপনাকে স্বাগতম।
