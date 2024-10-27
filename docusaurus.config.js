@@ -66,7 +66,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/banner.png',
+      metadata:[
+        { property: 'og:image', content: 'img/banner.png' },
+      ],
       navbar: {
         title: TITLE,
         logo: {
