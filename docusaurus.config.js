@@ -66,6 +66,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata:[
+        { property: 'og:image', content: 'img/banner.png' },
+        { name: 'description', content: 'ReactPlay is a platform for learning and building React projects' },
+        { property: 'og:description', content: 'ReactPlay is a platform for learning and building React projects' },
+      ],
       navbar: {
         title: TITLE,
         logo: {
