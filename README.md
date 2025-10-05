@@ -83,9 +83,7 @@ yarn start
 ````
 
 Or, for NPM:
-```bash
-npm run start
-```
+pnpm start
 
 The local development server will start on localhost:3000
 
@@ -119,7 +117,7 @@ Until it gets merged, browse [ReactPlay](https://reactplay.io/) and [contribute]
 
 Here are some common issues faced and their solutions:
 
-### Issue 1: `npm install` is not working
+### Issue 1: `pnpm install` is not working
 - Solution: Try deleting `node_modules` and reinstalling dependencies.
 
 ### Issue 2: Console errors or warnings

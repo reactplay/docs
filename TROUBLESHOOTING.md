@@ -4,25 +4,22 @@ Encountering setup or runtime issues while contributing to ReactPlay documentati
 
 ***
 
-### 1. `npm install` or `yarn install` Not Working
+### 1. `pnpm install` Not Working
 
-If running `npm install` or `yarn install` fails with errors:
+If running `pnpm install` fails with errors:
 
-- Ensure Node.js (version 14+) and npm/yarn are installed. Run:
+- Ensure Node.js (version 14+) and pnpm are installed. Run:
 
   ```
   node -v
-  npm -v
-  yarn -v
+  pnpm -v
   ```
 
 - Delete `node_modules` and the lock file, then install again:
 
   ```
-  rm -rf node_modules package-lock.json yarn.lock
-  npm install
-  # or
-  yarn install
+  rm -rf node_modules pnpm-lock.yaml
+  pnpm install
   ```
 
 - If you see permission errors (EACCES), try using a Node version manager like nvm:
@@ -30,40 +27,37 @@ If running `npm install` or `yarn install` fails with errors:
   ```
   nvm install --lts
   nvm use --lts
-  npm install
+  pnpm install
   ```
 
 - Ensure you are in the correct directory (where `package.json` is present).
 
-- If using a company proxy or firewall, configure npm/yarn proxies:
+- If using a company proxy or firewall, configure pnpm proxies:
 
   ```
-  npm config set proxy http://proxy.company.com:8080
-  npm config set https-proxy http://proxy.company.com:8080
+  pnpm config set proxy http://proxy.company.com:8080
+  pnpm config set https-proxy http://proxy.company.com:8080
   ```
 
 ### 2. Lots of Console Errors/Warnings
 
-While running `yarn start` or `npm run start`, you may see red or yellow messages.
+While running `pnpm start`, you may see red or yellow messages.
 
 - **Dependency warnings**: Most yellow warnings are safe to ignore, but make sure dependencies are up-to-date. Run:
 
   ```
-  npm outdated
-  npm update
-  # or
-  yarn upgrade
+  pnpm outdated
+  pnpm update
   ```
 
 - **Breaking errors** (e.g., "module not found"):
 
-  - Check if all dependencies are installed: `yarn install` or `npm install`
+  - Check if all dependencies are installed: `pnpm install`
   - Verify your Node.js version matches project requirements.
   - Try clearing the cache:
 
     ```
-    npm cache clean --force
-    yarn cache clean
+    pnpm store prune
     ```
 
 - **Custom errors in documentation**:
@@ -85,7 +79,7 @@ If you get the error "Port 3000 is already in use":
 - Change the port with:
 
   ```
-  PORT=4000 yarn start
+  PORT=4000 pnpm start
   ```
 
 ### 4. Unable to Push/Commit
@@ -105,12 +99,8 @@ If you get the error "Port 3000 is already in use":
 - Run:
 
   ```
-  # For npm
-  npm audit fix
-  npm install
-
-  # For yarn
-  yarn install --check-files
+  pnpm audit fix
+  pnpm install
   ```
 
 - Delete and reinstall `node_modules` if issues persist.
@@ -122,7 +112,7 @@ If the above solutions do not resolve your problem:
 - Copy the complete error message.
 - Make sure to mention:
   - Steps performed
-  - OS and Node/npm/yarn versions
+  - OS and Node/pnpm versions
 
 Then open a new issue or ask in the ReactPlay Discord/Community channels for support.
 
